@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compartible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+    <title>CHURRASCOMETRO</title>
+</head>
+<body>
+    <div class="container">
+        <h1>CONVIDADOS</h1>
+        <p>Informe as seguintes quantidades:</p>
+
+        <table>
+          <tr>
+            <td>
+              <label for="homens">Homens: <br></label>
+              <input class="input2" type="number" id="quantidadeHomens" value="0" placeholder="0" min="0">
+            </td>
+            <td>
+                <label for="mulheres">Mulheres:</label>
+                <input class="input2" type="number" id="quantidadeMulheres" value="0" placeholder="0" min="0">
+            </td>
+            <td>
+                <label for="criancas">Crianças:(acima de 5 anos) </label>
+                <input class="input2" type="number" id="quantidadeCriancas" value="0" placeholder="0" min="0">
+            </td>
+            <td>
+              <label for="duracao">Duração (horas):</label>
+              <input class="input2" type="number" id="duracao" placeholder="0" min="0">
+            </td>
+          </tr>
+        </table>
+
+        <div class="area-button">
+            <button class="custom-button" onclick="irParaProximaPagina()">Próximo</button>
+            <button class="custom-button" onclick="limpar()">Limpar</button>
+        </div>
+
+        <div id="duracaoMensagem" style="font-size: small; color: red; display: none;">Informe a duração</div>     
+    </div>
+
+    <script src="script/pagina1.js"></script>
+</body>
+</html>
